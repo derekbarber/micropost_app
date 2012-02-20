@@ -1,5 +1,5 @@
-MicropostApp::Application.routes.draw do
-  get "users/new"
+MicropostApp::Application.routes.draw do  
+  resources :users
   
   match '/signup',  to: 'users#new'
 
